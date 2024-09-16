@@ -1,17 +1,16 @@
 {
-"update_url": "https://clients2.google.com/service/update2/crx",
+  "update_url": "https://clients2.google.com/service/update2/crx",
 
   "manifest_version": 3,
   "name": "Telegram WebApp Platform Modifier",
   "version": "2.0",
   "description": "Enabling Telegram webApps to run in desktop version of Telegram",
-  "host_permissions": [
-    "https://web.telegram.org/*"
-  ],
+  "host_permissions": ["https://web.telegram.org/*"],
   "content_scripts": [
     {
       "matches": ["https://web.telegram.org/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "run_at": "document_start"
     }
   ],
   "action": {
