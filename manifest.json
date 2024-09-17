@@ -3,7 +3,7 @@
 
   "manifest_version": 3,
   "name": "Telegram WebApp Platform Modifier",
-  "version": "2.0",
+  "version": "2.2",
   "description": "Enabling Telegram webApps to run in desktop version of Telegram",
   "host_permissions": ["https://web.telegram.org/*"],
   "content_scripts": [
